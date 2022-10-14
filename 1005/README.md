@@ -3,4 +3,29 @@
 ```
 k진수에서 소수 개수 구하기
 ```
+
 https://school.programmers.co.kr/learn/courses/30/lessons/92335
+
+## Chek List
+
+> - [ ] yong
+> 
+> - [ ] yuzu
+> 
+> - [ ] seho
+> 
+> - [ ] dooo
+> 
+> - [ ] haeng
+> 
+> - [ ] won
+> 
+> - [ ] dongdong
+> 
+> - [ ] hyry
+> 
+> - [ ] seulseul
+> 
+> - [ ] jh
+> 
+> - [ ] hee
