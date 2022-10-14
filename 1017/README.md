@@ -1,10 +1,10 @@
-# 1014 문제
+# 1017 문제
 
 ```
-합승 택시 요금
+수식 최대화
 ```
 
-https://school.programmers.co.kr/learn/courses/30/lessons/72413
+https://school.programmers.co.kr/learn/courses/30/lessons/67257
 
 ## Chek List
 
@@ -16,15 +16,15 @@ https://school.programmers.co.kr/learn/courses/30/lessons/72413
 > 
 > - [ ] hee
 > 
-> - [x] hyry
+> - [ ] hyry
 > 
 > - [ ] jh
 > 
-> - [x] seho
+> - [ ] seho
 > 
 > - [ ] seulseul
 > 
-> - [x] won
+> - [ ] won
 > 
 > - [ ] yong
 > 
