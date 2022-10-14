@@ -22,7 +22,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/72413
 > 
 > - [x] seho
 > 
-> - [ ] seulseul
+> - [x] seulseul
 > 
 > - [x] won
 > 
