@@ -14,7 +14,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/72413
 > 
 > - [ ] haeng
 > 
-> - [ ] hee
+> - [x] hee
 > 
 > - [x] hyry
 > 
