@@ -8,24 +8,24 @@ https://school.programmers.co.kr/learn/courses/30/lessons/67257
 
 ## Chek List
 
-> - [ ] dooo
+> - [x] dooo
 > 
 > - [ ] dongdong
 > 
-> - [ ] haeng
+> - [x] haeng
 > 
-> - [ ] hee
+> - [x] hee
 > 
-> - [ ] hyry
+> - [x] hyry
 > 
-> - [ ] jh
+> - [x] jh
 > 
-> - [ ] seho
+> - [x] seho
 > 
 > - [ ] seulseul
 > 
-> - [ ] won
+> - [x] won
 > 
-> - [ ] yong
+> - [x] yong
 > 
-> - [ ] yuzu
+> - [x] yuzu
