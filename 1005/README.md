@@ -26,6 +26,6 @@ https://school.programmers.co.kr/learn/courses/30/lessons/92335
 > 
 > - [x] won
 > 
-> - [ ] yong
+> - [x] yong
 > 
 > - [x] yuzu
