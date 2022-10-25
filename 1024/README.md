@@ -18,7 +18,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/77485
 > 
 > - [x] hyry
 > 
-> - [ ] jh
+> - [x] jh
 > 
 > - [x] seho
 > 
