@@ -14,18 +14,18 @@ https://school.programmers.co.kr/learn/courses/30/lessons/67259
 > 
 > - [ ] haeng
 > 
-> - [ ] hee
+> - [x] hee
 > 
-> - [ ] hyry
+> - [x] hyry
 > 
-> - [ ] jh
+> - [x] jh
 > 
-> - [ ] seho
+> - [x] seho
 > 
 > - [ ] seulseul
 > 
-> - [ ] won
+> - [x] won
 > 
 > - [x] yong
 > 
-> - [ ] yuzu
+> - [x] yuzu

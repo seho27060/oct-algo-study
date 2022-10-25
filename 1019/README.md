@@ -10,15 +10,15 @@ https://school.programmers.co.kr/learn/courses/30/lessons/118667
 
 > - [ ] dongdong
 > 
-> - [ ] dooo
+> - [x] dooo
 > 
-> - [ ] haeng
+> - [x] haeng
 > 
 > - [x] hee
 > 
 > - [x] hyry
 > 
-> - [ ] jh
+> - [x] jh
 > 
 > - [x] seho
 > 
@@ -26,6 +26,6 @@ https://school.programmers.co.kr/learn/courses/30/lessons/118667
 > 
 > - [x] won
 > 
-> - [ ] yong
+> - [x] yong
 > 
-> - [ ] yuzu
+> - [x] yuzu
