@@ -48,7 +48,7 @@ def solution(places):
 
         for point in seachPoints:
             if result:
-                result = bfs(point[0],point[1],place)
+                result = checkDistanceFrom(point,place)
 
         answer.append(result)
     return answer
@@ -62,8 +62,8 @@ def isPointNotInSearchedSet(point,searchedSet):
 def manhattanDistance(departure, arrival):
     return abs(departure[0] - arrival[0]) + abs(departure[1] - arrival[1])
 
-def bfs(row,col,place):
-    stack = [[row, col]]
+def checkDistanceFrom(start,place):
+    stack = [[start[0], start[1]]]
     searchedSet = set()
     moves = [[0, 1], [0, -1], [1, 0], [-1, 0]]
     distanceCheck = 1
@@ -74,7 +74,7 @@ def bfs(row,col,place):
         for move in moves:
             nxtR, nxtC = now[0] + move[0], now[1] + move[1]
             if isPointInSearchRange((nxtR,nxtC)) and isPointNotInSearchedSet((nxtR,nxtC),searchedSet):
-                if manhattanDistance((row,col),(nxtR,nxtC)) <= 2:
+                if manhattanDistance(start,(nxtR,nxtC)) <= 2:
                     if place[nxtR][nxtC] == "X":
                         continue
                     elif place[nxtR][nxtC] == "O":
