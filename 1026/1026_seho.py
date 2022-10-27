@@ -44,9 +44,9 @@ def solution(places):
         for row in range(5):
             for col in range(5):
                 if place[row][col] == "P":
-                    seachPoints.append((row,col))
+                    startPoints.append((row,col))
 
-        for point in seachPoints:
+        for point in startPoints:
             if result:
                 result = checkDistanceFrom(point,place)
             else:
@@ -54,15 +54,6 @@ def solution(places):
 
         answer.append(result)
     return answer
-
-def isPointInSearchRange(point):
-    return 0 <= point[0] < 5 and 0 <= point[1] < 5
-
-def isPointNotInSearchedSet(point,searchedSet):
-    return point not in searchedSet
-
-def manhattanDistance(departure, arrival):
-    return abs(departure[0] - arrival[0]) + abs(departure[1] - arrival[1])
 
 def checkDistanceFrom(start,place):
     stack = [[start[0], start[1]]]
@@ -86,3 +77,12 @@ def checkDistanceFrom(start,place):
                         stack = []
                         break
     return distanceCheck
+
+def isPointInSearchRange(point):
+    return 0 <= point[0] < 5 and 0 <= point[1] < 5
+
+def isPointNotInSearchedSet(point,searchedSet):
+    return point not in searchedSet
+
+def manhattanDistance(departure, arrival):
+    return abs(departure[0] - arrival[0]) + abs(departure[1] - arrival[1])
