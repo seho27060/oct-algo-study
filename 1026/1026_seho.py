@@ -3,15 +3,11 @@
 # P - 자리/ O - 빈테이블/ X - 파티션
 # 모든 P 자리에 맨해튼 2범위내 dfs?
 
-places = [["POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"], ["POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"], ["PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"], ["OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"], ["PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"]]
-
+# 원래 코드
 def solution(places):
     answer = []
     moves = [[0,1],[0,-1],[1,0],[-1,0]]
     for place in places:
-        # for p in place:
-        #     print(p)
-        print("---")
         result = 1
         for row in range(5):
             for col in range(5):
@@ -29,7 +25,6 @@ def solution(places):
                                     if place[nxtR][nxtC] == "O":
                                         stack.append((nxtR,nxtC))
                                     elif place[nxtR][nxtC] == "P":
-                                        print(row,col,now,move,nxtR,nxtC)
                                         result = 0
                                         stack = []
                                         break
@@ -37,4 +32,55 @@ def solution(places):
 
     return answer
 
-print(solution(places))
+# Clean Code?
+def solution(places):
+
+    answer = []
+
+    for place in places:
+        result = 1
+        seachPoints = []
+
+        for row in range(5):
+            for col in range(5):
+                if place[row][col] == "P":
+                    seachPoints.append((row,col))
+
+        for point in seachPoints:
+            if result:
+                result = bfs(point[0],point[1],place)
+
+        answer.append(result)
+    return answer
+
+def isPointInSearchRange(point):
+    return 0 <= point[0] < 5 and 0 <= point[1] < 5
+
+def isPointNotInSearchedSet(point,searchedSet):
+    return point not in searchedSet
+
+def manhattanDistance(departure, arrival):
+    return abs(departure[0] - arrival[0]) + abs(departure[1] - arrival[1])
+
+def bfs(row,col,place):
+    stack = [[row, col]]
+    searchedSet = set()
+    moves = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    distanceCheck = 1
+
+    while stack:
+        now = stack.pop()
+        searchedSet.add((now[0], now[1]))
+        for move in moves:
+            nxtR, nxtC = now[0] + move[0], now[1] + move[1]
+            if isPointInSearchRange((nxtR,nxtC)) and isPointNotInSearchedSet((nxtR,nxtC),searchedSet):
+                if manhattanDistance((row,col),(nxtR,nxtC)) <= 2:
+                    if place[nxtR][nxtC] == "X":
+                        continue
+                    elif place[nxtR][nxtC] == "O":
+                        stack.append((nxtR, nxtC))
+                    elif place[nxtR][nxtC] == "P":
+                        distanceCheck = 0
+                        stack = []
+                        break
+    return distanceCheck
