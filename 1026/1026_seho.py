@@ -49,6 +49,8 @@ def solution(places):
         for point in seachPoints:
             if result:
                 result = checkDistanceFrom(point,place)
+            else:
+                break
 
         answer.append(result)
     return answer
