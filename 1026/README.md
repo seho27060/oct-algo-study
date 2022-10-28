@@ -12,20 +12,20 @@ https://school.programmers.co.kr/learn/courses/30/lessons/81302
 > 
 > - [ ] dooo
 > 
-> - [ ] haeng
+> - [x] haeng
 > 
 > - [ ] hee
 > 
 > - [x] hyry
 > 
-> - [ ] jh
+> - [x] jh
 > 
 > - [x] seho
 > 
 > - [ ] seulseul
 > 
-> - [ ] won
+> - [x] won
 > 
-> - [ ] yong
+> - [x] yong
 > 
-> - [ ] yuzu
+> - [x] yuzu
